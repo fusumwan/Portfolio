@@ -1,0 +1,160 @@
+
+    /* Reset styles scoped within the home-container */
+    .home-container * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    /* Style the home-container */
+    .home-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%; /* Full viewport height */
+        position: fixed; /* To cover the entire viewport */
+        top: 0;
+        left: 0;
+    }
+    
+    /* This wrapper is for the shadow */
+    .home-container .hexagon-shadow {
+        display: inline-block;
+        filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.5)); /* Glowing effect */
+        
+    }
+    
+    .home-container .hexagon-wrapper {
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+        width: 300px; /* Your Image Width */
+        height: 340px; /* Your Image Height */
+        background-color: #00eeff;
+        position: relative;
+        transform: translateY(-20%);
+    }
+    
+    .home-container .hexagon-wrapper img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    .home-container .status_container {
+        max-width: 800px;
+        margin: auto;
+        padding-top: 20px; /* Adjust based on your design */
+        font-family: 'Arial', sans-serif;
+        color: #ffffff;
+        text-align: center;
+        margin: 0;
+        padding: 50px;
+        
+    }
+    
+    .home-container .highlight {
+        color: #00eeff; /* Highlight color */
+    }
+    
+    .home-container .social-links {
+        /* Add styling for social media icons */
+        margin: 20px 0;
+    }
+
+    .home-container .social-icon {
+        /* Add styling for social media icons */
+        margin: 0 10px;
+        text-decoration: none;
+        color: #00eeff; /* Social icon color */
+        font-size: 24px; /* Adjust size as needed */
+        border-radius: 50%; /* Makes the icons circular */
+        width: 40px; /* Icon width */
+        height: 40px; /* Icon height */
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent; /* No background color */
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.6), /* Glowing effect */
+                    0 0 20px rgba(0, 255, 255, 0.6), /* Glowing effect */
+                    0 0 30px rgba(0, 255, 255, 0.6), /* Glowing effect */
+                    0 0 40px #00eeff; /* Color of the glow */
+        transition: all 0.3s ease;
+    }
+
+    /* Hover effect for social media icons */
+    .home-container .social-icon:hover {
+        box-shadow: 0 0 15px rgba(0, 255, 255, 0.8),
+                    0 0 25px rgba(0, 255, 255, 0.8),
+                    0 0 35px rgba(0, 255, 255, 0.8),
+                    0 0 45px #00eeff; /* Enhance the glow effect on hover */
+        transform: scale(1.1); /* Slightly increase icon size on hover */
+    }
+    
+    .home-container #download-cv {
+        background-color: #00eeff; /* Button background color */
+        color: #121212; /* Button text color */
+        border: none;
+        padding: 10px 20px;
+        margin: 20px 0;
+        border-radius: 20px;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 255, 255, 0.5); /* Drop shadow effect */
+        transition: all 0.3s ease;
+    }
+    
+    .home-container #download-cv:hover {
+        background-color: #008ecc;
+        box-shadow: 0 6px 12px rgba(0, 255, 255, 0.8); /* Hover effect */
+    }
+
+    /* Media query for screens with a width of less than 700px */
+    /* Media query for screens with a width of less than 700px */
+    @media (max-width: 700px) {
+        .home-container {
+        flex-direction: column; /* Stack the children vertically */
+        justify-content: flex-start; /* Align items to the start of the container */
+        align-items: center; /* Center items on the cross-axis */
+        padding-top: 0px; /* Add padding to the top to prevent overlap with the content */
+        }
+    
+        .home-container .hexagon-shadow,
+        .home-container .status_container {
+        width: 90%; /* Set width to a percentage of the container for responsiveness */
+        margin: 0 auto; /* Center the content */
+        
+        padding: 1rem; /* Add padding for better spacing */
+        }
+    
+        .home-container .hexagon-wrapper {
+        width: 50%; /* Adjust image width for mobile */
+        height: auto; /* Adjust image height for mobile */
+        margin: 0 auto; /* Center the image within its container */
+        position: relative; /* Ensure the position is relative for accurate spacing */
+        transform: none; /* Remove any transformations */
+        }
+    
+        .home-container .hexagon-wrapper img {
+        max-width: 100%; /* Ensure the image is fully responsive within its container */
+        height: auto; /* Maintain aspect ratio */
+        }
+    
+        /* Adjust the margin and padding of the status_container to control spacing */
+        .home-container .status_container {
+            margin-top: 20px; /* Add top margin to separate from the image */
+            padding-top: 100px; /* Add padding to the top to prevent overlap with the content */
+        }
+    
+        /* Adjust social link styles if needed for mobile layout */
+        .home-container .social-links {
+        /* Your styles for social links */
+        }
+    
+        /* Ensure the download CV button is fully responsive and centered */
+        .home-container #download-cv {
+        display: block; /* Change the display to block for full width */
+        
+        margin: 20px auto; /* Center the button with automatic margins */
+        }
+    }
+        
+

@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: rgb(11, 56, 107);
+  overflow-y: auto; /* Enable scrolling for overflow content */
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.center {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn {
+  width: 40px;
+  height: 40px;
+  background: rgb(37, 38, 53);
+  outline: none;
+  border: none;
+  cursor: pointer;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.btn span {
   color: white;
+  font-size: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background: rgb(37, 38, 53);
+  font-family: poppins;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transform: translateX(-300px);
+  transition: 0.25s;
+}
+.nav-bar.open {
+  transform: translateX(0);
+}
+.head {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  border-bottom: 0.5mm solid rgb(87, 88, 109);
+}
+.logo {
+  font-size: 28px;
+}
+.list {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.list-title {
+  width: 100%;
+  padding: 5px 20px;
+  padding-top: 20px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.items {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.item {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+
+}
+.item:hover {
+  background: rgba(100, 100, 100, 0.5);
+}
+.item span {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.list:last-child {
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+.list:last-child .item {
+  color: rgb(255, 131, 131);
+  background: rgba(100, 100, 100, 0.3);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

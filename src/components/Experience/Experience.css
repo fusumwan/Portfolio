@@ -1,0 +1,63 @@
+/* Reset styles scoped within the experience-container */
+.experience-container * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style the experience-container for large screens */
+.experience-container {
+  display: flex;
+  flex-direction: column; /* Changed to column to stack children vertically */
+  align-items: flex-start; /* Changed to flex-start to align children to the start (left) - Modified */
+  width: 100%;
+  height: 100%; /* Full viewport height */
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 20px; /* Added padding on the left - Added */
+}
+
+
+
+/* Adjust styles for smaller screens */
+@media screen and (max-width: 700px) {
+
+  
+  .experience-container {
+    overflow-y: auto; /* Enable vertical scrolling within the container */
+
+    height: auto; /* Allow container to expand to content height */
+    padding-left: 20px; /* Ensure padding on the left for smaller screens - Modified */
+  }
+
+  .experience-container .status_container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px; /* Ensure consistent padding for smaller screens - Modified */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    text-align: left; /* Ensure text alignment to the left - Modified */
+  }
+}
+
+/* Style for status container not within a media query */
+.experience-container .status_container {
+  max-width: 800px;
+  margin: auto;
+  padding-top: 20px;
+  padding: 50px;
+  font-family: 'Arial', sans-serif;
+  color: #ffffff;
+  text-align: left; /* Ensure text alignment to the left - Modified */
+}
+
+.experience-container .highlight {
+  color: #00eeff; /* Highlight color */
+}
+
+.experience-container .social-links {
+  margin: 20px 0;
+  /* Add styling for social media icons */
+}

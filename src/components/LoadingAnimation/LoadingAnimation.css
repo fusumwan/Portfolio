@@ -1,0 +1,61 @@
+/* Reset styles scoped within the loading-container */
+.loading-container * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style the loading-container */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: fixed; /* Ensure the container covers the entire viewport */
+  top: 0;
+  left: 0;
+  background: #00008bcb; /* Background color */
+}
+
+/* Styles specific to the loader, scoped within the loading-container */
+.loading-container .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-container .wrapper .loader {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.loading-container .loader .loading {
+  background: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  margin: 0 10px;
+  animation: load 0.8s ease infinite;
+}
+
+.loading-container .loader .loading.one {
+  animation-delay: 0.3s;
+}
+.loading-container .loader .loading.two {
+  animation-delay: 0.4s;
+}
+.loading-container .loader .loading.three {
+  animation-delay: 0.5s;
+}
+
+@keyframes load {
+  0% {
+    width: 30px;
+    height: 30px;
+  }
+  50% {
+    width: 20px;
+    height: 20px;
+  }
+}

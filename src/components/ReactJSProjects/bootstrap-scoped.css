@@ -1,0 +1,38 @@
+/* bootstrap-scoped.css */
+
+.gridview-container {
+    @import 'bootstrap/dist/css/bootstrap.min.css';
+  }
+
+
+/* ReactJSSamples.css */
+.gridview-container .table {
+    /* Bootstrap table styles */
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    background-color: white; /* Set the background color to white */
+    /* ...other Bootstrap table styles as needed */
+  }
+  
+  .gridview-container .table th,
+  .gridview-container .table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+    /* ...other Bootstrap table styles as needed */
+  }
+  
+  .gridview-container .table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+    /* ...other Bootstrap table styles as needed */
+  }
+
+  /* Adding font style for links in gridview-container */
+.gridview-container a {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+               'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
