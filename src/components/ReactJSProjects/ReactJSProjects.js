@@ -25,7 +25,7 @@ function ReactJSProjects({ onShowBgVideo, onShowLoadingAnimation }) {
           <table  className="table">
             <tr>
               <td>
-              <img src={process.env.PUBLIC_URL + '/Images/portfolio.png'} style={{ width: "50%", height: "50%" }} alt="Profile" />
+              <img src={process.env.PUBLIC_URL + '/Images/portfolio.png'} style={{ width: "260px", height: "150px" }} alt="Profile" />
               </td>
             </tr>
             <tr>
