@@ -13,11 +13,36 @@ function ReactJSProjects({ onShowBgVideo, onShowLoadingAnimation }) {
   const data = useMemo(() => [
     {
       id: '1',
+      name: (
+        <div>
+        <p>Personal Portfolio</p> 
+        <p>(ReactJS Website)</p>
+        <a href='https://fusumwan.github.io/portfolio/'  target="_blank" rel="noopener noreferrer">Portfolio</a>
+        </div>
+      ),
+      description: (
+        <div>
+          <table  className="table">
+            <tr>
+              <td>
+              <img src={process.env.PUBLIC_URL + '/Images/portfolio.png'} style={{ width: "50%", height: "50%" }} alt="Profile" />
+              </td>
+            </tr>
+            <tr>
+              <td style={{ width: '350px' }}>
+              This portfolio, crafted with ReactJS, demonstrates my expertise over 3 years in Java, Spring MVC, Hibernate, and 6 years in ASP.NET WebForms C#. It highlights my contributions to robust technology solutions and a keen interest in AI and Machine Learning, reflecting my commitment to leveraging technology for impactful outcomes. As an Analyst Programmer, I specialize in developing efficient web applications, with a focus on optimizing organizational functionality. Please explore my showcased work for insights into my skills and experiences.</td>
+            </tr>
+          </table>
+        </div>
+      )
+    },
+    {
+      id: '2',
       name: <a href="#" onClick={(e) => { e.preventDefault(); e.stopPropagation(); onShowBgVideo(); }}>Show Background Video</a>,
       description: 'This program is showing a Background Video program'
     },
     {
-      id: '2',
+      id: '3',
       name: <a href="#" onClick={(e) => { e.preventDefault(); e.stopPropagation(); onShowLoadingAnimation(); }}>Show Loading Animation</a>,
       description: 'This program is showing a Loading Animation'
     }
@@ -55,7 +80,7 @@ function ReactJSProjects({ onShowBgVideo, onShowLoadingAnimation }) {
     setPageSize,
     state: { pageIndex, pageSize },
   } = useTable(
-    { columns, data, initialState: { pageIndex: 0, pageSize: 5 } }, // Set initial page size
+    { columns, data, initialState: { pageIndex: 0, pageSize: 1 } }, // Set initial page size
     usePagination
   );
 
@@ -112,7 +137,7 @@ function ReactJSProjects({ onShowBgVideo, onShowLoadingAnimation }) {
                 setPageSize(Number(e.target.value));
               }}
             >
-              {[5, 10, 20].map(pageSize => (
+              {[1, 2].map(pageSize => (
                 <option key={pageSize} value={pageSize}>
                   Show {pageSize}
                 </option>
