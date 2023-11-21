@@ -16,7 +16,13 @@ function JavaProjects() {
         <p>Order Table</p> 
         <p>(Spring Boot Project)</p>
         <a href='https://github.com/fusumwan/JavaWebAppProject/tree/main/ordertableweb' target="_blank" rel="noopener noreferrer">download</a>
-
+        <table>
+          <tr>
+            <td style={{ width: '350px' }}>
+            At my previous company, I developed and maintained various web systems, including small-scale ones for internal use like report generation. These projects are showcased on my YouTube channel, offering insights into their functionalities and potential suitability for your company's needs.
+            </td>
+          </tr>
+        </table>
         </div>
       ),
       description: (
