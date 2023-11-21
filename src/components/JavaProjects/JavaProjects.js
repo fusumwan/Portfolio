@@ -206,6 +206,29 @@ function JavaProjects() {
           ></iframe>
         </div>
       )
+    },
+    {
+      id: '8',
+      name:  (
+        <div>
+        <p>Spring Boot work with Hadoop</p> 
+        <p>(Big data mining and analytics)</p>
+
+        </div>
+      ),
+      description: (
+        <div>
+          <iframe
+            width="275"
+            height="157"
+            src="https://www.youtube.com/embed/bBCpzFGKuW8"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            title="Spring Boot work with Hadoop"
+          ></iframe>
+        </div>
+      )
     }
   ], []);
 
