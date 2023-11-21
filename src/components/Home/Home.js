@@ -15,6 +15,21 @@ function Home() {
     setIsHovered(false);
   };
 
+  // Function to handle CV download
+  const handleDownloadCV = () => {
+    // Construct the file path
+    const filePath = process.env.PUBLIC_URL + '/Pdf/Resume21-11-2023.docx.pdf';
+    // Create a new anchor element
+    const link = document.createElement('a');
+    link.href = filePath;
+    link.download = 'Resume21-11-2023.docx.pdf';
+    // Append to the document and trigger download
+    document.body.appendChild(link);
+    link.click();
+    // Remove the link from the document
+    document.body.removeChild(link);
+  };
+
   // Dynamic style based on hover state
   const hexagonStyle = {
     display: 'inline-block',
@@ -43,7 +58,7 @@ function Home() {
             l
           </a>
         </div>
-        <button id="download-cv">Download CV</button>
+        <button id="download-cv" onClick={handleDownloadCV}>Download CV</button>
       </div>
       <div className="hexagon-shadow" style={hexagonStyle}
            onMouseOver={handleMouseOver}
