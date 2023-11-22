@@ -50,7 +50,7 @@ function About() {
         <br></br>
         <div className="showcase">
           <h3>Showcase</h3>
-          <p>For a glimpse of my capabilities, please visit my <a href="https://programmingnoteblog.blogspot.com/2023/10/github-link-web-application.html" target="_blank" rel="noopener noreferrer">project showcase</a>.</p>
+          <p>For a glimpse of my capabilities, please visit my <a href="https://www.youtube.com/playlist?list=PLCGUIZTAlaI5woaDr5Ik860T4pNHeap0t" target="_blank" rel="noopener noreferrer">project showcase in Youtube</a>.</p>
         </div>
       </div>
     </section>
