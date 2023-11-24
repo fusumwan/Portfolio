@@ -18,16 +18,22 @@ function Home() {
   // Function to handle CV download
   const handleDownloadCV = () => {
     // Construct the file path
-    const filePath = process.env.PUBLIC_URL + '/Pdf/Resume21-11-2023.docx.pdf';
+    const filePath = process.env.PUBLIC_URL + '/Pdf/Resume24-11-2023.docx.pdf';
     // Create a new anchor element
     const link = document.createElement('a');
     link.href = filePath;
-    link.download = 'Resume21-11-2023.docx.pdf';
+    link.download = 'Resume24-11-2023.docx.pdf';
     // Append to the document and trigger download
     document.body.appendChild(link);
     link.click();
     // Remove the link from the document
     document.body.removeChild(link);
+  };
+
+  // Function to handle opening the GitHub URL in a new tab
+  const handleExploreGitHub = () => {
+    // Open the URL in a new tab
+    window.open('https://github.com/fusumwan/', '_blank');
   };
 
   // Dynamic style based on hover state
@@ -58,7 +64,10 @@ function Home() {
             l
           </a>
         </div>
-        <button id="download-cv" onClick={handleDownloadCV}>Download CV</button>
+        
+        <button id="download-cv" className="blue-button" onClick={handleDownloadCV}>Download CV</button>
+        &nbsp;
+        <button id="explore-github" className="blue-button" onClick={handleExploreGitHub}>Download Source Code</button>
       </div>
       <div className="hexagon-shadow" style={hexagonStyle}
            onMouseOver={handleMouseOver}

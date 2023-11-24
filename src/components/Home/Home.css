@@ -90,7 +90,7 @@
         transform: scale(1.1); /* Slightly increase icon size on hover */
     }
     
-    .home-container #download-cv {
+    .home-container .blue-button {
         background-color: #00eeff; /* Button background color */
         color: #121212; /* Button text color */
         border: none;
@@ -102,7 +102,7 @@
         transition: all 0.3s ease;
     }
     
-    .home-container #download-cv:hover {
+    .home-container .blue-button:hover {
         background-color: #008ecc;
         box-shadow: 0 6px 12px rgba(0, 255, 255, 0.8); /* Hover effect */
     }
@@ -150,7 +150,7 @@
         }
     
         /* Ensure the download CV button is fully responsive and centered */
-        .home-container #download-cv {
+        .home-container .blue-button {
         display: block; /* Change the display to block for full width */
         
         margin: 20px auto; /* Center the button with automatic margins */
