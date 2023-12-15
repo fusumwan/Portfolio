@@ -22,7 +22,7 @@ function Home() {
     // Create a new anchor element
     const link = document.createElement('a');
     link.href = filePath;
-    link.download = 'Resume24-11-2023.docx.pdf';
+    link.download = 'Resume15-12-2023.docx.pdf';
     // Append to the document and trigger download
     document.body.appendChild(link);
     link.click();
