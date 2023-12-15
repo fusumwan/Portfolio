@@ -18,7 +18,7 @@ function Home() {
   // Function to handle CV download
   const handleDownloadCV = () => {
     // Construct the file path
-    const filePath = process.env.PUBLIC_URL + '/Pdf/Resume24-11-2023.docx.pdf';
+    const filePath = process.env.PUBLIC_URL + '/Pdf/Resume15-12-2023.docx.pdf';
     // Create a new anchor element
     const link = document.createElement('a');
     link.href = filePath;
