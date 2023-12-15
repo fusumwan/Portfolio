@@ -19,23 +19,23 @@ function BgVideo() {
 
   return (
     <div className="video-container">
-    <section className="hero">
-      <video 
-        autoPlay 
-        loop 
-        muted 
-        playsInline 
-        className="back-video" 
-        ref={videoRef} // Updated the ref name here
-      >
-        <source src={`${process.env.PUBLIC_URL}/BgVideo/video.mp4`} type="video/mp4" />
-      </video>
+      <section className="hero">
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline 
+          className="back-video" 
+          ref={videoRef} // Updated the ref name here
+        >
+          <source src={`${process.env.PUBLIC_URL}/BgVideo/video.mp4`} type="video/mp4" />
+        </video>
 
-      <section className="content">
-        <h1>Journey</h1>
-        <a href="#">Explore</a>
+        <section className="content">
+          <h1>Journey</h1>
+          <a href="#">Explore</a>
+        </section>
       </section>
-    </section>
     </div>
   );
 }
