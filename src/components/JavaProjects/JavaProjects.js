@@ -19,7 +19,7 @@ function JavaProjects() {
         <table>
           <tr>
             <td style={{ width: '350px' }}>
-            At my previous company, I developed and maintained various web systems, including small-scale ones for internal use like report generation. These projects are showcased on my YouTube channel, offering insights into their functionalities and potential suitability for your company's needs.
+            These projects are showcased on my YouTube channel.
             </td>
           </tr>
         </table>
