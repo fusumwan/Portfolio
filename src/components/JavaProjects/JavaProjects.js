@@ -70,7 +70,8 @@ function JavaProjects() {
         <p>Spring Boot Security JWT Authentication</p> 
         <p>(Without WebSecurityConfigurerAdapter) (part 1)</p>
         <a href='https://github.com/fusumwan/JavaWebAppProject/tree/main/ordertableweb' target="_blank" rel="noopener noreferrer">download</a>
-
+        
+        <a href='http://ordertable-aws.ap-southeast-2.elasticbeanstalk.com/' target="_blank" rel="noopener noreferrer">Website</a>
         </div>
       ),
       description: (
