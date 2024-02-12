@@ -4,7 +4,6 @@ import { useTable,usePagination  } from 'react-table';
 import './JavaProjects.css'; 
 import './bootstrap-scoped.css';
 
-
 function JavaProjects() {
   const gridViewRef = useRef(null);
   // Sample data (replace with your actual data)
