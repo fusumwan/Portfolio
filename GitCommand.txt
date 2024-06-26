@@ -1,0 +1,13 @@
+npm run build
+npm start
+
+===============================
+git init
+git remote add origin https://github.com/fusumwan/portfolio-amplify.git
+git pull
+git branch -M main     
+=================
+git pull
+git add .
+git commit -m "Initial project commit"
+git push --set-upstream origin main
