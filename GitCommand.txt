@@ -6,8 +6,13 @@ git init
 git remote add origin https://github.com/fusumwan/portfolio.git
 git pull
 git branch -M main     
-=================
+=================Deploy to github====
 git pull
 git add .
 git commit -m "Initial project commit"
 git push --set-upstream origin main
+git push -u origin main
+npm run build
+npm install --save gh-pages
+
+
