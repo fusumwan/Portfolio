@@ -67,7 +67,7 @@ function Home() {
         
         <button id="download-cv" className="blue-button" onClick={handleDownloadCV}>Download CV</button>
         &nbsp;
-        <button id="explore-github" className="blue-button" onClick={handleExploreGitHub}>Download Source Code</button>
+        <button id="explore-github" className="blue-button" onClick={handleExploreGitHub}>Download Source Code!</button>
       </div>
       <div className="hexagon-shadow" style={hexagonStyle}
            onMouseOver={handleMouseOver}

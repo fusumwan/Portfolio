@@ -3,7 +3,7 @@ npm start
 
 ===============================
 git init
-git remote add origin https://github.com/fusumwan/portfolio-amplify.git
+git remote add origin https://github.com/fusumwan/portfolio.git
 git pull
 git branch -M main     
 =================
