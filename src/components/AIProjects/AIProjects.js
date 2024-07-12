@@ -13,6 +13,29 @@ function AIProjects() {
       id: '1',
       name: (
         <div>
+        <p>RAG AI Project</p> 
+        <p>(RAG + Langchain + Chroma +OpenAI+ FastAPI Python Project:)</p>
+        <p>(Easy AI/Chat/Talk For Your Docs)</p>
+        </div>
+      ),
+      description: (
+        <div>
+          <iframe
+            width="275"
+            height="157"
+            src="https://www.youtube.com/embed/60o1afn2l4g"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            title="Easy AI/Chat/Talk For Your Docs"
+          ></iframe>
+        </div>
+      )
+    },
+    {
+      id: '2',
+      name: (
+        <div>
         <p>AI Stock Prediction</p> 
         <p>(Regression & Long-term short-term memory network)</p>
         <a href='https://github.com/fusumwan/aistockprediction'>download</a>
@@ -32,7 +55,7 @@ function AIProjects() {
       )
     },
     {
-      id: '2',
+      id: '3',
       name: (
         <div>
         <p> TensorFlow & Spring Boot project</p> 
@@ -54,7 +77,7 @@ function AIProjects() {
       )
     },
     {
-      id: '3',
+      id: '4',
       name: (
         <div>
         <p>A Search for Improved Performance in Regular Expressions(Genetic programming)</p> 

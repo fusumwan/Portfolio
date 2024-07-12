@@ -14,5 +14,5 @@ git push --set-upstream origin main
 git push -u origin main
 npm run build
 npm install --save gh-pages
-
+npm run deploy
 
