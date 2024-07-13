@@ -23,7 +23,7 @@ function AIProjects() {
           <iframe
             width="275"
             height="157"
-            src="https://www.youtube.com/embed/60o1afn2l4g"
+            src="https://www.youtube.com/embed/bhMfwEv48hY"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
