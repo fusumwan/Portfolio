@@ -18,11 +18,11 @@ function Home() {
   // Function to handle CV download
   const handleDownloadCV = () => {
     // Construct the file path
-    const filePath = process.env.PUBLIC_URL + '/Pdf/CV-Resume-09-05-2024.docx.pdf';
+    const filePath = process.env.PUBLIC_URL + '/Pdf/CV-Resume-07-08-2024.docx.pdf';
     // Create a new anchor element
     const link = document.createElement('a');
     link.href = filePath;
-    link.download = 'CV-Resume-09-05-2024.docx.pdf';
+    link.download = 'CV-Resume-07-08-2024.docx.pdf';
     // Append to the document and trigger download
     document.body.appendChild(link);
     link.click();
