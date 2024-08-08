@@ -14,7 +14,7 @@ function Home() {
   const handleMouseOut = () => {
     setIsHovered(false);
   };
-
+  
   // Function to handle CV download
   const handleDownloadCV = () => {
     // Construct the file path
